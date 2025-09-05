@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mostrando: #EB6FA7;
+  --esperando: #90144B;
+  --flotando: #F6C0D9;
+}
+
+body{
+  background: #FFE0E7;
+  color: black;
+  font-family: Helvetica, Arial sans sans-serif;
+}
+
+
+h1{
+  color: #B51B5F;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;" 
+
+} 
+
+h2{
+  color: #E6478F;
+  font-family: "Libertinus Serif Display", system-ui;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 23px;" 
+  
+} 
+a:hover{
+  color:#4682B4;
+  text-decoration: underline;
+  transition: all ease .5s;
+}
+
+a:hover:after{
+  content:" 💌"; /*al pasar el mouse se vera el emoji*/
+}
+
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(90% - 2rem), 500px);
+    height:auto;
+    padding: 1rem;
+    margin: auto;
+    background: white;
+    border-radius: .5rem;
+    z-index: 9999;
+}
+
+p{
+  padding:0.5rem 0;
+}
+
+nav{
+  margin:1rem 0;  
+}
+
+nav a{
+  line-height: 1;
+  text-decoration: none;
+  color:white;
+  margin:0 1rem 0 0;
+  padding:0.3rem 1rem;
+  background:var(--esperando);
+  border-radius: .6rem;
+  transition:all ease .75s;
+}
+
+nav a:hover{
+  color:white;
+  background:var(--flotando);  
+  transition:all ease .75s;
+}
+
+nav a.active{
+  color:white;
+  background:var(--mostrando);
+}
